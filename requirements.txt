@@ -1,3 +1,5 @@
+### This is all initial stuff and Im inclunding things I use on a weekly basis. I haven't bothered pinning versions
+### except for pandas because there was a 1.0.0 bug where .groupby().apply(list) would throw an error, lol.
 # the classics
 pandas>=1.0.1
 numpy
@@ -5,21 +7,46 @@ sklearn
 statsmodels
 
 # vis librariers
+
+# plotly/dash good combo. Dash is like plotly's shinny and allows hosting capabilities.
+# it's pretty much based on Flask and you can do some interesting things with Dash when
+# attached to flask app
 plotly
 dash
+
+# std library for plotting afaic.
 matplotlib
 seaborn
+
+# datashader is newer and it's really interesting to have in your back pocket for very quick
+# vis of very large (millions of rows) datasets.
+# I enjoy using it when I play for it. Want to work incorporating in analysis more 
+# because it is extremely fast and produces high quality images for large datasets
+# Use when traditional plotting (above) fails under load.
 datashader
+
+# plotly color library, I think it's like matplotlib's colormap
+# I think a project with this package is something I am going to work on first
 colorlover
+
+# useful for quick geojson choropleths or point maps
+# can only really handle 1000s of points, max
 folium
-bokeh
 
 # some support tools
 ipykernel
 jupyter
+
+# I think I'll hold off on aws for now and stick with local postgres.
+# There's a lot of hype, and a lot of warrented hype around cloud computing
+# but beneath the ai support tools, the design, the marketing is likely a bunch of postgres servers duct taped together with a .txt file mapping them
 psycopg2
-xlrd
+
+# good source of public timeseries data with objective outcomes (profit/loss)
+# plus, who wouldn't want to ax.scatter() their way into riches when we plot the universe
 yfinance
+
+# helpful with folium for generating some on the fly choropleths
 geojson
 
 #conda installs

@@ -21,13 +21,26 @@ THere's a req file in here of libraries Im using or planning on using.
 
 ###### getting started
 
+I'm using a conda virtual env python=3.7
 if you want to mess with shapefiles at all (try) and install these. I've mostly used GDAL on mac where it's a pain to install, I don't have experience with it on windows. 
+
+```
 conda install -c conda-forge gdal
 conda install fiona
+```
 
-
-conda install --file requirements.txt
+```
 python -m pip install -r requirements.txt
+```
+
+###### structure
+
+Like I said above, this repo is more about documenting my exploration of different visualization libraries than anything else.
+I plan on maintaining code and notebooks in this repository I think. Im going to try and avoid and storing anything in git or maybe provide links in a yaml
+in the data/ directory, and a readme with instructions to myself for local postgres setup since I forget all the time.
+
+
+
 
 
 drop a message if you have a cool dataset or vis
