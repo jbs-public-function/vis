@@ -1,0 +1,27 @@
+# the classics
+pandas>=1.0.1
+numpy
+sklearn
+statsmodels
+
+# vis librariers
+plotly
+dash
+matplotlib
+seaborn
+datashader
+colorlover
+folium
+bokeh
+
+# some support tools
+ipykernel
+jupyter
+psycopg2
+xlrd
+yfinance
+geojson
+
+#conda installs
+# conda install -c conda-forge gdal
+# conda install fiona -- installs shapely & click, awesome!
