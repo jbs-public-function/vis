@@ -36,7 +36,8 @@ python -m pip install -r requirements.txt
 ###### structure
 
 Like I said above, this repo is more about documenting my exploration of different visualization libraries than anything else.
-I plan on maintaining code and notebooks in this repository I think. Im going to try and avoid and storing anything in git or maybe provide links in a yaml
+I plan on maintaining code and notebooks in this repository I think. Im going to try and avoid and storing large sets of data in git
+Hopefully I can provide links.
 in the data/ directory, and a readme with instructions to myself for local postgres setup since I forget all the time.
 
 
