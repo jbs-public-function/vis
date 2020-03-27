@@ -21,7 +21,8 @@ THere's a req file in here of libraries Im using or planning on using.
 
 ##### getting started
 
-###### I'm using a conda to manage my virtual env python=3.7
+###### I'm using conda to manage my virtual env python=3.7
+###### I may want to work with shapefiles and I prefer condas implementation of GDAL
 ###### conda refresher
 
 `conda create -n my_env_name python=3.7`
