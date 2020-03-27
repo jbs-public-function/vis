@@ -21,7 +21,11 @@ THere's a req file in here of libraries Im using or planning on using.
 
 ###### getting started
 
-I'm using a conda virtual env python=3.7
+####### I'm using a conda to manage my virtual env python=3.7
+####### conda refresher
+`
+conda create -n my_env_name python=3.7
+`
 if you want to mess with shapefiles at all (try) and install these. I've mostly used GDAL on mac where it's a pain to install, I don't have experience with it on windows. 
 
 ```
