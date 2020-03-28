@@ -21,7 +21,7 @@ create conda venv
 add conda kernel to jupyter notebook
 * `python -m ipykernel install --user --name other-env --display-name "Python (other-env)"`
 
-if you want to mess with shapefiles at all (try) and install these. I've mostly used GDAL on mac where it's a pain to install, I don't have experience with it on windows. 
+if you want to mess with shapefiles at all (try) and install these. I've mostly used GDAL on mac where it's a pain to install. I didn't have much experience with it on windows until now. 
 
 ```
 conda install -c conda-forge gdal
