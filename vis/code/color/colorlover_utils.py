@@ -15,3 +15,9 @@ def rgb_to_hex_string(r):
     """
     conversion = ''.join([str(hex(_r)).lstrip('0x') for _r in r])
     return f'#{conversion}'
+
+print('LOADED')
+
+
+if __name__ == '__main__':
+    print(rgb_to_hex_string((255,128,125)))
