@@ -9,7 +9,7 @@ in the rgb spectrum a color exists as a 3-tuple of data each within the range 0-
 * (255,255,255) is white 
 * this gives 256^3 (16 Million) possible color combinations
 
-hex color behaves similarily but each color is represented as a string in python #FFFFFF is equivalent to (255, 255, 255)
+hex color behaves similarily but each color is represented in python as a string with the prefix `#`, ie,  `"#FFFFFF"` is equivalent to (255, 255, 255)
 Because FF is the equivalent to 255 in base 16 (hex)
 
 There's also an `alpha` property in both, a 4th set of numbers representing transparency but we can leave that alone for now
