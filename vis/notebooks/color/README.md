@@ -1,8 +1,15 @@
 # notebooks/color
-This is going to be my first project. One of the issues I run into time & time again is color settings. For the most part all of the various plotting libraries have perfect color selection in specific instances and good enough at worst. Tweaking color is a really important part of the visual story you're trying to paint and getting a handle on color is paramount. What kind of color scheme do you want? stark contrasts to contrast at the extreme? Subtle gradiations between near values? Is a negative number always red? Or is it good sometimes and we need to reverse the RdBu scale?
+This is going to be my first project. One of the issues I run into time & time again is color settings. For the most part, all of the various plotting libraries make near perfect color selections in very specific instances, good enough decisisions in most situations, and "huh?" decisions in a few cases. Tweaking color is a really important part of setting the table for the visual story you're trying to tell and getting a handle on color is of paramount importance.
+
+## asking questions of your data
+* What kind of color scheme do you want? 
+* Stark contrasts to contrast at the extreme? 
+* Subtle gradiants between a small-closed range of numbers? 
+* Is a negative number always red? Or is it good sometimes and we need to reverse the RdBu scale?
 
 I've been working with the plotly affiliated colorlover package for a couple of weeks and have had some promising results with generating colorschemes. Matplotlib also has it's own colormapping library that we will also look at. 
 
+#### tangent
 We need two types of color selections beyond a simple x,y scatter plot.
 * an x,y scatter plot has two colors, so min_n_colors  for f(x,y) =  1
 * maybe n-1 for f(x1, x2, x3, ..., xn) = n - 1
@@ -12,10 +19,7 @@ We need two types of color selections beyond a simple x,y scatter plot.
         * tangent! lol
 
 But seriously, being able to generate color palletes either by a (min, max) range, specify a significant value, or even just generate the entire color series is a timesaver and is the first step to taking control of your visual story.
-I think I want to work in rgb for the time being. Both plotly and matplotlib should accept rgb colors. I've had some issues with plotly > 4.x where sankey wasn't accepting hex colors properrly.
-
-* interfunctionality conversion between rgb, hex, hsl, might be a useful tool
-    * small support class with click args
+I think I want to work in rgb for the time being. Both plotly and matplotlib should accept rgb colors. I've had some issues with plotly > 4.x accepting hex values
 
 We also need to consider what kind of color scheme do we want to genreate? Discrete steps or continuous flow? Each method has it's advantages
 
@@ -32,7 +36,7 @@ Continous colors allowing for a smooth transtitions, especially amongst values o
 let's explore
 * colors-exploration.ipynb
 
-The below is a muscle memory for me. I could add this to the jupyter startup script but I like seeing the imports in the first cell, plus it's really important to rememeber what was imported and when and where within jupyter specifically but also for when our prototype gets coded up.  
+The below is a muscle memory for me. I could add this to the jupyter startup script but I like seeing the imports in the first cell, plus it's really important to rememeber what was imported and when and where within jupyter specifically but also for when our prototype gets coded up. I'm only adding it because it would be nice to have a copy-pasta for this
 
 ```
 import pandas as pd 
