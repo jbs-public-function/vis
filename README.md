@@ -15,17 +15,21 @@ I will likely be writing a lot of wrappers around existing plotting code. Not ne
 that is meaninginful to me.
 
 
-Im generally working on a conda venv on windows, currently python 3.8.
-* I am curious about dipping into D3, so drop me a message if you want to evangelize.
-THere's a req file in here of libraries Im using or planning on using.
+Im working in a conda venv on windows, python version 3.7.
+* After working with plotly/dash for a while I am curious about dipping my toe into D3, so drop me a message if you want to evangelize.
 
-##### getting started
+#### getting started
 
-###### I'm using conda to manage my virtual env python=3.7
-###### I may want to work with shapefiles and I prefer condas implementation of GDAL
-###### conda refresher
+ I'm using conda to manage my virtual env python=3.7
+I may want to work with shapefiles and I prefer condas implementation of GDAL
 
-`conda create -n my_env_name python=3.7`
+##### conda refresher
+
+create conda venv
+* `conda create -n my_env_name python=3.7`
+
+add conda kernel to jupyter notebook
+* `python -m ipykernel install --user --name other-env --display-name "Python (other-env)"`
 
 if you want to mess with shapefiles at all (try) and install these. I've mostly used GDAL on mac where it's a pain to install, I don't have experience with it on windows. 
 
@@ -38,12 +42,19 @@ conda install fiona
 python -m pip install -r requirements.txt
 ```
 
+to install as a package
+```
+python -m pip install -e .
+```
+
 ###### structure
 
+* code -> once I've prototyped something I'll start adding code into this directory.
+* data -> not sure if I want to keep this around. If I maintain any static datasets in this git repository they must be small and low-impact
+* notebooks -> workspace for jupyter notebooks
+
 Like I said above, this repo is more about documenting my exploration of different visualization libraries than anything else.
-I plan on maintaining code and notebooks in this repository I think. Im going to try and avoid and storing large sets of data in git
-Hopefully I can provide links.
-in the data/ directory, and a readme with instructions to myself for local postgres setup since I forget all the time.
+I will be adding a readme and doc strings to document or otherwise leave instructions to myself.
 
 
 

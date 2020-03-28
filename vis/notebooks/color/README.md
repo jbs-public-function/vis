@@ -1,7 +1,5 @@
 # notebooks/color
-This is going to be my first project. One of the issues I run into time & time again is color settings. For the most part all of the various plotting libraries have perfect color selection in specific instances and good enough at worst. Tweaking color is a really important part of the visual story you're trying to paint and getting a handle on color is paramount. 
-
-What kind of color scheme do you want? stark contrasts to contrast at the extreme? Subtle gradiations between near values? Is a negative number always red? Or is it good sometimes and we need to reverse the RdBu scale?
+This is going to be my first project. One of the issues I run into time & time again is color settings. For the most part all of the various plotting libraries have perfect color selection in specific instances and good enough at worst. Tweaking color is a really important part of the visual story you're trying to paint and getting a handle on color is paramount. What kind of color scheme do you want? stark contrasts to contrast at the extreme? Subtle gradiations between near values? Is a negative number always red? Or is it good sometimes and we need to reverse the RdBu scale?
 
 I've been working with the plotly affiliated colorlover package for a couple of weeks and have had some promising results with generating colorschemes. Matplotlib also has it's own colormapping library that we will also look at. 
 
@@ -34,8 +32,6 @@ Continous colors allowing for a smooth transtitions, especially amongst values o
 let's explore
 * colors-exploration.ipynb
 
-* baseline_notebook.ipynb 
-
 The below is a muscle memory for me. I could add this to the jupyter startup script but I like seeing the imports in the first cell, plus it's really important to rememeber what was imported and when and where within jupyter specifically but also for when our prototype gets coded up.  
 
 ```
@@ -54,16 +50,3 @@ from plotly.subplots import make_subplots
 import plotly.graph_objects as go 
 init_notebook_mode(connected=True)
 ```
-
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>This is a title</title>
-  </head>
-  <body>
-    <p>Hello world!</p>
-  </body>
-</html>
-
-
