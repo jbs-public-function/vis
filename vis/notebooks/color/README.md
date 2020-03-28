@@ -1,4 +1,6 @@
 # notebooks/color
+An interesting discussion on color from [colorcet](https://colorcet.holoviz.org/).
+
 This is going to be my first project. One of the issues I run into time & time again is color settings. For the most part, all of the various plotting libraries make near perfect color selections in very specific instances, good enough decisisions in most situations, and "huh?" decisions in a few cases. Tweaking color is a really important part of setting the table for the visual story you're trying to tell and getting a handle on color is of paramount importance.
 
 ## asking questions of your data
