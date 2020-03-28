@@ -7,23 +7,13 @@
 ##### To What Purpose
 
 I keep making cool plots at work, but they tend to be one offs, and then weeks later I may want it again, and there I am, spending a good half hour rewriting completed plots.
-The primary purpose of this repository is to document and develop plots of specific varieties in a variety of platforms. To make my professional life more effecient
-The purpose of this repository really is a place to store my thoughts, designs, and graphs of public data.
+The primary purpose of this repository is to document and develop plots of specific varieties in a variety of platforms. Ultimately, to make my professional life more effecient.
 
+I will likely be writing a lot of wrappers around existing plotting code. Not necessarily improving but customizing in a way that is meaninginful to me.
 
-I will likely be writing a lot of wrappers around existing plotting code. Not necessarily improving but customizing in a way 
-that is meaninginful to me.
-
-
-Im working in a conda venv on windows, python version 3.7.
+#### environment
+I'm using conda to manage my virtual environment with python version = 3.7.7
 * After working with plotly/dash for a while I am curious about dipping my toe into D3, so drop me a message if you want to evangelize.
-
-#### getting started
-
- I'm using conda to manage my virtual env python=3.7
-I may want to work with shapefiles and I prefer condas implementation of GDAL
-
-##### conda refresher
 
 create conda venv
 * `conda create -n my_env_name python=3.7`
@@ -42,7 +32,7 @@ conda install fiona
 python -m pip install -r requirements.txt
 ```
 
-to install as a package
+install as a package
 ```
 python -m pip install -e .
 ```
