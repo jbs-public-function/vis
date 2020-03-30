@@ -4,12 +4,11 @@ import csv
 import pickle
 import time
 
-import pandas as pd 
-import numpy as np 
-
-from sklearn.cluster import KMeans, MiniBatchKMeans
+from sklearn.cluster import KMeans
 
 from vis.data.utils import DATADIR
+from vis.code.analysis.decorators import pickle_data
+
 
 ANALYSIS_DIR = Path(__file__)
 
@@ -53,18 +52,10 @@ def group_kmeans(data, n_clusters_array, path):
         [writer.writerow(td) for td in timing_data]
 
 
+@pickle_data
+def load_files_and_tags(tags, file_format, datapath, **kwargs):
+    return map(list, zip(*kwargs.get('data')))
+
+
 if __name__ == "__main__":
-    frac = 0.008
-    frac_str = 'frac_{}'.format('_'.join(('{}'.format(frac)).split('.')))
-    datapkl = "16m_rgb.pkl"
-
-    stamp = str(int(time.time()))
-    _path = DATADIR.joinpath('analysis').joinpath('kmeans').joinpath(stamp)
-    _path.mkdir(exist_ok=True)
-    df = pd.read_pickle(DATADIR.joinpath(datapkl))
-    df = df.sample(frac=frac)
-    df.to_pickle(_path.joinpath('_'.join([frac_str, datapkl])))
-    n_clusters = [3, 8, 16, 32, 64, 128, 256, 512, 1024]
-
-    print(frac, frac_str, len(df))
-    group_kmeans(df[['red', 'green', 'blue']], n_clusters, _path)
+    pass
